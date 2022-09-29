@@ -1,63 +1,90 @@
-body{
-    line-height: 1.5;
-    font-family: sans-serif;
-}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
+body{
+    width: 550px;
+    padding: 25px;
+    margin: 1rem auto;
+    background:#91a3b0;
+    color: grey;
+}
+
 .container{
-    max-width: 1170px;
-    margin: auto;
+    background:whitesmoke;
+    width: 500px;
+    padding: 25px;
+    margin: 50px auto 0;
+    border-radius: 6px;
 }
-.row{
-    display:flex;
-    flex-wrap: wrap;
+.container h2{
+    font-size: 24px;
+    text-align: center;
 }
-ul{
-    list-style: none;
+p{
+  font-size: 18px;  
+  color: grey;
 }
-.footer{
-    background-color:white;
-    padding: 70px 0;
+.details{
+    width: 90%;
+    margin: 20px auto;
 }
-.footer-col{
-    width: 25%;
-    padding: 0 15px;
 
+.name{
+    width: 49%;
+    padding: 8px 30px;
 }
-.footer-col h4{
-    font-size: 15px;
-    color: #000;
-    text-transform: capitalize;
-    position: relative;
 
+.other{
+    width: 100%;
+    padding: 8px 30px;
 }
-.footer-col li a{
-    font-size: 12px;
-    text-transform: capitalize;
-    color: gray;
+.details i{
+    position: absolute;
+    margin: 0.5em;
+}
+
+.name , .other{
+    border: 2px solid #cccccc;
+    outline: none;
+    border-radius: 4px;
+}
+
+.gender{
+    margin-right: 10%;
+}
+
+.select{
+    padding: 0.5em;
+    width: 99%;
+}
+
+.green{
     text-decoration: none;
-    margin-top: 12px ;
-    display: block;
-    position: relative;
-    
+    color: #01a049;
+}
 
+.btn{
+    width: 99%;
+    padding: 8px 30px;
+    background: #4CAF50;
+    outline: none;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 4px;
 }
-.footer-col .socials a{
-    font-size: 25px;
-    height: 40px;
-    width: 40px;
-    margin: 0 10px 10px 0;
-    top: 10px;
-    background-color: white;
-    border-radius: 50%;
+
+h6{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    color: white;
+    font-size: 1rem;
 }
-.footer-col .socials p{
-    font-size: 12px;
-    color: gray;
-    display: block;
-    position: relative;
-    margin-left: auto;
+
+h6 a{
+    color: white;
 }
