@@ -1,96 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Registration Form</title>
-</head>
-<body>
-    <div class="container">
-        <h1>Register</h1>
-        <p>Create your account. It's free and only takes a minute. </p>
+  </head>
+  <body> 
+    
+      <div class="container">
+        <h2>Register</h2>
+        <p>Create your account. It's free and only takes a minute.</p>
         <form>
+          <div class="details">
+            <i class="fa fa-solid fa-user"></i>
+            <input type="text" placeholder="First Name" class="name" required>
+            <span>
+              <i class="fa fa-solid fa-user"></i>
+              <input type="text" placeholder="Last Name" class="name" required>
+            </span>
+          </div>
 
-            <div class="values">
-                <i class="fa fa-solid fa-user"></i>
-                <input type="text" placeholder="First Name" required>
-                <span>
-                    <i class="fa fa-solid fa-user"></i>
-                    <input type="text" placeholder="Last Name" required>
-                </span>
-            </div>
+          <div class="details">
+            <i class="fa fa-solid fa-envelope"></i>
+            <input type="text" placeholder="Email" class="other" required>
+          </div>
 
-            <div class="values">
-                <i class="fa fa-solid fa-envelope"></i>
-                <input type="text" placeholder="Email" required>
-            </div>
+          <div class="details">
+            <i class="fa fa-solid fa-mobile"></i>
+            <input type="tel" placeholder="Mobile" class="other" required>
+          </div>
 
-            <div class="values">
-                <i class="fa fa-solid fa-mobile"></i>
-                <input type="tel" placeholder="Mobile" required>
-            </div>
+          <div class="details">
+            <i class="fa fa-sharp fa-solid fa-lock"></i>
+            <input type="password" placeholder="Password" class="other">
+          </div>
 
-            <div class="values">
-                <i class="fa fa-sharp fa-solid fa-lock"></i>
-                <input type="password" placeholder="Password">
-            </div>
+          <div class="details">
+            <i class="fa fa-sharp fa-solid fa-lock"></i>
+            <input type="password" placeholder="Confirm Password" class="other">
+          </div>
 
-            <div class="values">
-                <i class="fa fa-sharp fa-solid fa-lock"></i>
-                <input type="password" placeholder="Confirm Password">
-            </div>
+          <div class="details">
+            <input type="radio" name="gender">
+            <label class="gender">Male</label>
+            <input type="radio" name="gender">
+            <label class="gender">Female</label>
+            <input type="radio" name="gender">
+            <label class="gender">Prefer Not to Say</label>
+          </div>
 
-            <div class="values">
-                <input type="radio" name="gender">
-                <label>Male</label>
-                <input type="radio" name="gender">
-                <label>Female</label>
-                <input type="radio" name="gender">
-                <label>Others</label>
-            </div>
+          <div class="details">
+            <select class="select">
+              <option>Choose Your Country</option>
+              <option>Afghanisthan</option>
+              <option>Algeria</option>
+              <option>Belgium</option>
+              <option>Canada</option>
+              <option>Denmark</option>
+              <option>Egypt</option>
+              <option>France</option>
+              <option>Germany</option>
+              <option>Hungary</option>
+              <option>India</option>
+              <option>Japan</option>
+              <option>Korea</option>
+              <option>Lalaysia</option>
+              <option>Nigeria</option>
+              <option>Oman</option>
+              <option>Peru</option>
+              <option>Qatar</option>
+              <option>Russia</option>
+              <option>Switzerland</option>
+              <option>Turkey</option>
+              <option>United states</option>
+              <option>Vietnam</option>
+              <option>Yemen</option>
+              <option>Zimbawe</option>
+            </select>
+          </div>
 
-            <div class="values">
-                <select>
-                    <option>Choose Your Country</option>
-                    <option>afghanisthan</option>
-                    <option>algeria</option>
-                    <option>belgium</option>
-                    <option>canada</option>
-                    <option>denmark</option>
-                    <option>egypt</option>
-                    <option>france</option>
-                    <option>germany</option>
-                    <option>hungary</option>
-                    <option>india</option>
-                    <option>japan</option>
-                    <option>korea</option>
-                    <option>malaysia</option>
-                    <option>nigeria</option>
-                    <option>oman</option>
-                    <option>peru</option>
-                    <option>qatar</option>
-                    <option>russia</option>
-                    <option>switzerland</option>
-                    <option>turkey</option>
-                    <option>united states</option>
-                    <option>vietnam</option>
-                    <option>yemen</option>
-                    <option>zimbawe</option>
-                </select>
-            </div>
-
-            <div class="values">
-                <input type="checkbox">
-                <label>I accept the <span class="green">Terms of Use</span> & <span class="green">Privacy Policy</span> </label>
-            </div>
-            <div class="values">
-                <input type="button" value="Register Now">
-            </div>
-
+          <div class="details">
+            <input type="checkbox">
+            <label>
+              I accept the <a href="#" class="green">Terms of Use</a> & <a href="#" class="green">Privacy Policy</a>
+            </label>
+          </div>
+          <div class="details">
+            <input type="submit" value="Register Now" class="btn">
+          </div>
         </form>
-    </div>
-</body>
+      </div>
+      
+        <h6>Already have an account? &nbsp; <a href="#">Sign in</a></h6>
+      
+    
+  </body>
 </html>
