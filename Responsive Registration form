@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <p>Create your account. It's free and only takes a minute. </p>
+        <form>
+
+            <div class="values">
+                <i class="fa fa-solid fa-user"></i>
+                <input type="text" placeholder="First Name" required>
+                <span>
+                    <i class="fa fa-solid fa-user"></i>
+                    <input type="text" placeholder="Last Name" required>
+                </span>
+            </div>
+
+            <div class="values">
+                <i class="fa fa-solid fa-envelope"></i>
+                <input type="text" placeholder="Email" required>
+            </div>
+
+            <div class="values">
+                <i class="fa fa-solid fa-mobile"></i>
+                <input type="tel" placeholder="Mobile" required>
+            </div>
+
+            <div class="values">
+                <i class="fa fa-sharp fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password">
+            </div>
+
+            <div class="values">
+                <i class="fa fa-sharp fa-solid fa-lock"></i>
+                <input type="password" placeholder="Confirm Password">
+            </div>
+
+            <div class="values">
+                <input type="radio" name="gender">
+                <label>Male</label>
+                <input type="radio" name="gender">
+                <label>Female</label>
+                <input type="radio" name="gender">
+                <label>Others</label>
+            </div>
+
+            <div class="values">
+                <select>
+                    <option>Choose Your Country</option>
+                    <option>afghanisthan</option>
+                    <option>algeria</option>
+                    <option>belgium</option>
+                    <option>canada</option>
+                    <option>denmark</option>
+                    <option>egypt</option>
+                    <option>france</option>
+                    <option>germany</option>
+                    <option>hungary</option>
+                    <option>india</option>
+                    <option>japan</option>
+                    <option>korea</option>
+                    <option>malaysia</option>
+                    <option>nigeria</option>
+                    <option>oman</option>
+                    <option>peru</option>
+                    <option>qatar</option>
+                    <option>russia</option>
+                    <option>switzerland</option>
+                    <option>turkey</option>
+                    <option>united states</option>
+                    <option>vietnam</option>
+                    <option>yemen</option>
+                    <option>zimbawe</option>
+                </select>
+            </div>
+
+            <div class="values">
+                <input type="checkbox">
+                <label>I accept the <span class="green">Terms of Use</span> & <span class="green">Privacy Policy</span> </label>
+            </div>
+            <div class="values">
+                <input type="button" value="Register Now">
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
