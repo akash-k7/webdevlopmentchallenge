@@ -16,16 +16,38 @@ body{
     background:whitesmoke;
     width: 500px;
     padding: 25px;
-    margin: 50px auto 0;
+    margin: 0 auto 0;
     border-radius: 6px;
+
 }
-.container h2{
+h2{
     font-size: 24px;
     text-align: center;
+    position: relative;
+}
+h2::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    background: #bebebe;
+    width: 170px;
+    margin-top: 1rem;
+}
+h2::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    right: 0;
+    background: #bebebe;
+    width: 170px;
+    margin-top: 1rem;
 }
 p{
   font-size: 18px;  
   color: grey;
+  margin-top: 1rem;
+  text-align: center;
 }
 .details{
     width: 90%;
@@ -52,6 +74,14 @@ p{
     border-radius: 4px;
 }
 
+.dob{
+    width: 75%;
+}
+
+.file{
+    width:60%;
+}
+
 .gender{
     margin-right: 10%;
 }
@@ -59,6 +89,10 @@ p{
 .select{
     padding: 0.5em;
     width: 99%;
+}
+
+.check{
+    margin-left: 0;
 }
 
 .green{
@@ -74,13 +108,19 @@ p{
     color: white;
     font-size: 19px;
     font-weight: bold;
+    border: none;
     border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color:#01a049;
 }
 
 h6{
     display: flex;
-    justify-content: center;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
+    margin-left: 6rem;
     color: white;
     font-size: 1rem;
 }
@@ -88,3 +128,19 @@ h6{
 h6 a{
     color: white;
 }
+
+@media (max-width:440px){
+    .details{
+      margin-top:2px
+    }
+    .name{
+      width: 99%;
+      padding: 8px 30px;
+      margin-top:1.5rem;
+    }
+  
+    .names i{
+      margin-top:2rem; 
+    }
+    
+  }
