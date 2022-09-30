@@ -16,7 +16,7 @@
         <h2>Register</h2>
         <p>Create your account. It's free and only takes a minute.</p>
         <form>
-          <div class="details">
+          <div class="details names">
             <i class="fa fa-solid fa-user"></i>
             <input type="text" placeholder="First Name" class="name" required>
             <span>
@@ -27,12 +27,31 @@
 
           <div class="details">
             <i class="fa fa-solid fa-envelope"></i>
-            <input type="text" placeholder="Email" class="other" required>
+            <input type="email" placeholder="Email" class="other" required>
           </div>
 
           <div class="details">
             <i class="fa fa-solid fa-mobile"></i>
-            <input type="tel" placeholder="Mobile" class="other" required>
+            <input type="tel" placeholder="Mobile" class="other" pattern="[0-9]{10}" required>
+          </div>
+
+          <div class="details">
+            <label>Date of Birth:</label>
+            <input type="date"  class="other dob" >
+          </div>
+
+          <div class="details">
+            <label>Upload your Resume:</label>
+            <input type="file"  class="other file" required>
+          </div>
+
+          <div class="details">
+            <label>Proficiency in English:</label>
+            <input type="range"  class="other range">
+          </div>
+
+          <div class="details">
+            <textarea name="message" placeholder="Your Message Here!!" cols="50" rows="5"></textarea>
           </div>
 
           <div class="details">
@@ -85,6 +104,17 @@
           </div>
 
           <div class="details">
+            <label>Select languages known:</label>
+            <select class="select" multiple>
+              <option>English</option>
+              <option>Spanish</option>
+              <option>German</option>
+              <option>Malayalam</option>
+              <option>Hindi</option>
+              <option>Arabic</option>
+            </select>
+          </div>
+          <div class="details check">
             <input type="checkbox">
             <label>
               I accept the <a href="#" class="green">Terms of Use</a> & <a href="#" class="green">Privacy Policy</a>
@@ -96,7 +126,8 @@
         </form>
       </div>
       
-        <h6>Already have an account? &nbsp; <a href="#">Sign in</a></h6>
+      <h6>Already have an account? &nbsp; <a href="#">Sign in</a></h6>
       
+    
   </body>
 </html>
