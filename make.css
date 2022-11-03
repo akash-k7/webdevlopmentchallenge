@@ -27,3 +27,31 @@ h3{
         display: none;
     }
 }
+@media (min-width:1650px) and (max-width:2700px){
+    .container,.container-fluid{
+        margin: 0 2rem!important;
+    }
+    .navbar{
+        margin-bottom: 2rem;
+    }
+    a.navbar-brand {
+        font-size: 3rem;
+    }
+    .icons{
+        font-size: 3rem!important;
+    }
+    .make h2{
+        font-size: 20rem!important;
+    }
+    .paras {
+        font-size: 1.8rem!important;
+    }
+    .titl{
+        font-size: 3rem!important;
+    }
+    .res{
+        margin: 2rem 1rem!important;
+    }
+
+
+}
