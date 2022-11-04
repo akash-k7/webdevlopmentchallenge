@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "neuebold";
+    src: url(fonts/neuebold.ttf);
+}
+@font-face {
+    font-family: "neuerom";
+    src: url(fonts/neuerom.ttf);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h2{
+    font-family: "neuebold";
+    font-size: 5rem;
+}
+p{
+    font-family: "neuerom";
+}
+.land{
+    margin: 8rem 6rem;
+}
+.land p{
+    margin-top: 2rem;
+}
+.land .lbtn{
+    margin-top: 1.5rem;
+    background-color: #7E4FFF;
+    color: white;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+}
+
+.navbar{
+    font-family:"neuebold" ;
+}
+.nav-item{
+    margin: 0 2rem;
+    font-family: "neuerom";
+}
