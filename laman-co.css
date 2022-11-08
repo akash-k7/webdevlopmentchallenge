@@ -17,15 +17,16 @@ h2{
 p{
     font-family: "neuerom";
 }
+img{
+    max-width:100%;
+}
 .land{
     margin: 8rem 5rem;
 }
 .land p{
     margin-top: 2rem;
 }
-.land img{
-    max-width: 100%;
-}
+
 /* .land img{
     max-width: 100%;
     max-height: 100%;
@@ -84,11 +85,8 @@ margin-bottom: 2rem;
 }
 .mainrow1 img{
     padding: 2rem 0;
-    max-width: 100%;
 }
 .mainrow2 .para{
     margin-bottom: 2rem;
 }
-.mainrow2 .row img{
-    max-width: 100%;
-}
+
