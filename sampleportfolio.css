@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "sfmono" ;
+    src: url(fonts/sfmono.otf);
+}
+
+:root{
+    --primary-color:#1A1D27;
+    --secondary-color:#161A22;
+    --highlight:#FFCC73;
+    --box-color:#1A212F;
+    --text:#A1A3B3;
+    --font2: sfmono;
+}
+.navbar,.home,#services{
+    background-color: var(--primary-color);
+}
+.navbar-brand{
+    color: var(--highlight)!important;
+}
+.nav-link{
+    font-family:var(--font2);
+    color:whitesmoke!important;
+    margin: 0 1rem;
+    font-size: 0.8rem;
+}
+.logo{
+    max-width: 90px;
+}
+.home1{
+    padding-left: 5rem;
+    padding-right: 0;
+}
+.home2{
+    padding-left: 0;
+}
+/* .prof{
+    max-width: 50%;
+} */
+.prof {
+    max-width: 50%;
+    /* background-color:var(--text); */
+   
+}
+.scroll{
+    color: var(--highlight);
+    position: absolute;
+    right: 1rem;
+    bottom: 90px;
+    transform: rotate(90deg);
+}
+.clr,.btn,.myskill{
+    color: var(--highlight);
+}
+.icons{
+    position: absolute;
+    left: 2rem;
+    bottom: 30%;
+}
+.homeicons:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    color: var(--highlight);
+}
+.homeicons{
+    margin: 1rem 0;
+}
+
+.hometext,.about p{
+    color: var(--text);
+    font-family: var(--font2);
+}
+.hometext .btn{
+    outline: var(--highlight) solid 2px;
+    color: var(--highlight);
+    /* color: var(--secondary-color); */
+}
+.hometext .btn:hover{
+    background-color: var(--box-color);
+    color: var(--highlight);
+    transform: scale(1.1);
+}
+
+.about{
+    background-color: var(--secondary-color);
+    color: var(--text);
+}
+.skills ul li{
+    list-style: none;
+    font-family: var(--font2);
+    padding-top: 10px;
+}
+.progress-bar{
+    background-color: var(--highlight);
+}
+.counter{
+    float: right;
+}
+.progress.active .progress-bar {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
