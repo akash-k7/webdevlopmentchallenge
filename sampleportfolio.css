@@ -99,3 +99,142 @@
     -webkit-transition: none !important;
     transition: none !important;
 }
+
+.card{
+    background-color: var(--box-color);
+}
+.expicon{
+    color: var(--text);
+    font-size: 2rem;
+}
+.service{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+p.card-text {
+    font-size: 0.8rem;
+}
+.contact{
+    height: 90vh;
+}
+.mailme{
+    border-left: 1px solid #fff ;
+}
+.emailme{
+    font-size: 2rem;
+}
+.contbtn{
+    display: flex;
+    justify-content: center;
+}
+
+.footlogo{
+    max-width: 50px;
+}
+a.footLink {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: white;
+}
+.footlast{
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    padding-top: 1rem;
+}
+
+/* responsive */
+
+@media (min-width:1600px) and (max-width:2800px){
+    img.logo {
+        max-width: 150px;
+    }
+    a.nav-link {
+        font-size: 1.5rem;
+    }
+    .home .row {
+        padding: 0 4rem;
+    }
+    .hometext h2{
+        font-size: 5rem;
+    }
+    .hometext p,.hometext .btn,.contact p,.abouttext p,.contact .btn{
+        font-size: 2rem;
+    }
+    .icons,.service p,label.form-label{
+        font-size: 1.7rem;
+    }
+    .hometext .btn:hover,.contact .btn:hover,.hometext .btn:focus,.contact .btn:focus{
+        box-shadow: inset 250px 0 0 0 var(--highlight);
+        transition: all 700ms ease;
+    }
+    .expicon{
+        font-size: 4rem;
+    }
+    .about h2, .service h2 {
+        font-size: 4rem;
+    }
+    h5.card-title {
+        font-size: 2.8rem;
+    }
+    .skills ul{
+        font-size: 1.5rem;
+    }
+    .skills h4,.contact h2{
+        font-size: 3rem;
+    }
+    .wn{
+        margin-bottom: 6rem;
+    }
+    .emailme p {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .footlogo{
+        max-width: 70px;
+    }
+    .footmid,.footlast{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:790px){
+    
+    .service,.contact{
+        height: auto;
+    }
+    .mailme{
+        border-left: none;
+        border-top: 1px solid #fff;
+    }
+    .scroll{
+        display: none;
+    }
+    .footlog{
+        display: flex;
+        justify-content: center;
+    }
+    .footmid{
+        margin: 1rem 0;
+    }
+}
+@media (max-width:450px){
+    .hometext p,.hometext .btn,.service p,.contact p,.abouttext p,.contact .btn{
+        font-size: 0.8rem;
+    }
+    a .footlink,.footlast p{
+        font-size: 0.5rem;
+    }
+    .home1{
+        padding-left: 3rem;
+    }
+    .skills ul {
+        padding: 0 1rem;
+    }
+    .emailme{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+}
+
