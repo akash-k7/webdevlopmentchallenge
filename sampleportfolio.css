@@ -2,6 +2,10 @@
     font-family: "sfmono" ;
     src: url(fonts/sfmono.otf);
 }
+@font-face {
+    font-family: "font2" ;
+    src: url(fonts/SourceSansPro-Bold.ttf);
+}
 
 :root{
     --primary-color:#1A1D27;
@@ -11,7 +15,17 @@
     --text:#A1A3B3;
     --font2: sfmono;
 }
-.navbar,.home,#services{
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    background-color: var(--primary-color);
+}
+.navbar{
+    background-color: transparent;
+}
+.home,.service,.footer{
     background-color: var(--primary-color);
 }
 .navbar-brand{
@@ -23,8 +37,11 @@
     margin: 0 1rem;
     font-size: 0.8rem;
 }
+.nav-link:hover,.nav-link:focus{
+    color: var(--highlight)!important;
+}
 .logo{
-    max-width: 90px;
+    max-width: 60px;
 }
 .home1{
     padding-left: 5rem;
@@ -33,56 +50,92 @@
 .home2{
     padding-left: 0;
 }
-/* .prof{
-    max-width: 50%;
-} */
 .prof {
     max-width: 50%;
-    /* background-color:var(--text); */
    
 }
-.scroll{
+.scroll a p{
+    text-decoration: none;
     color: var(--highlight);
+}
+
+a.butn {
+    outline: var(--highlight) solid 1px;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    color: var(--highlight)!important;
+}
+
+.scroll{
     position: absolute;
     right: 1rem;
     bottom: 90px;
     transform: rotate(90deg);
 }
-.clr,.btn,.myskill{
+.clr,.myskill,.abouttext h2,.contact h2,.service h2,h5{
     color: var(--highlight);
+}
+.abouttext h2,.contact h2,.service h2{
+    font-family: font2;
+}
+.abouttext h2:hover,.contact h2:hover,.service h2:hover{
+    transform: scale(1.1);
+    border-bottom: 1px solid #A1A3B3;
+    transition: all 800ms ease;
 }
 .icons{
     position: absolute;
     left: 2rem;
     bottom: 30%;
 }
+.home a{
+    text-decoration: none;
+    color: white;
+}
 .homeicons:hover{
     cursor: pointer;
-    transform: scale(1.5);
+    transform: scale(1.5) translateY(-3px);
     color: var(--highlight);
+    transition:all 300ms ease ;
 }
 .homeicons{
     margin: 1rem 0;
 }
-
-.hometext,.about p{
+.hometext h2{
+    font-family: font2;
+    color: #fff;
+    letter-spacing: 4px;
+}
+.hometext h2:hover{
+    /* color: var(--highlight); */
+    transform: scale(1.1);
+    font: 100px 40px Arial;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: #FFCC73 1px;
+    transition: all 100ms ease;
+}
+.hometext,.about p,.card p,.contact p,.footer p{
     color: var(--text);
     font-family: var(--font2);
 }
-.hometext .btn{
-    outline: var(--highlight) solid 2px;
+.contact .btn{
+    outline: var(--highlight) solid 1px;
     color: var(--highlight);
-    /* color: var(--secondary-color); */
 }
-.hometext .btn:hover{
-    background-color: var(--box-color);
-    color: var(--highlight);
-    transform: scale(1.1);
+a.butn:hover,.contact .btn:hover,a.butn:focus,.contact .btn:focus{
+    background-color: var(--primary-color);
+    color: var(--primary-color)!important;
+    outline: none;
+    box-shadow: inset 150px 0 0 0 var(--highlight);
+    transition: all 500ms ease;
 }
 
-.about{
+.about,.contact{
     background-color: var(--secondary-color);
     color: var(--text);
+}
+.about .prof{
+    max-width: 40%;
 }
 .skills ul li{
     list-style: none;
@@ -90,7 +143,7 @@
     padding-top: 10px;
 }
 .progress-bar{
-    background-color: var(--highlight);
+    background-color:var(--highlight)
 }
 .counter{
     float: right;
@@ -99,7 +152,6 @@
     -webkit-transition: none !important;
     transition: none !important;
 }
-
 .card{
     background-color: var(--box-color);
 }
@@ -117,6 +169,12 @@ p.card-text {
 }
 .contact{
     height: 90vh;
+}
+.c1{
+    margin-bottom: 3rem!important;
+}
+.c1 p{
+    margin-bottom: 2rem;
 }
 .mailme{
     border-left: 1px solid #fff ;
@@ -144,11 +202,32 @@ a.footLink {
     padding-top: 1rem;
 }
 
+/* animation start */
+
+.reveal{
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
+.reveal1{
+    animation:slideInRight;
+    animation-duration: 2s;
+}
+.reveal3{
+    animation:fadeInRightBig;
+    animation-duration: 2s;
+}
+.reveal4,.homeicons{
+    animation: fadeInDownBig;
+    animation-duration: 2s;
+}
+
+/* animation end*/
+
 /* responsive */
 
 @media (min-width:1600px) and (max-width:2800px){
     img.logo {
-        max-width: 150px;
+        max-width: 100px;
     }
     a.nav-link {
         font-size: 1.5rem;
@@ -159,13 +238,16 @@ a.footLink {
     .hometext h2{
         font-size: 5rem;
     }
-    .hometext p,.hometext .btn,.contact p,.abouttext p,.contact .btn{
+    .hometext p,a.butn,.contact p,.abouttext p,.contact .btn{
         font-size: 2rem;
     }
     .icons,.service p,label.form-label{
         font-size: 1.7rem;
     }
-    .hometext .btn:hover,.contact .btn:hover,.hometext .btn:focus,.contact .btn:focus{
+    a.butn{
+        padding: 0.8rem 1.8rem;
+    }
+    a.butn:hover,.contact .btn:hover,a.butn:focus,.contact .btn:focus{
         box-shadow: inset 250px 0 0 0 var(--highlight);
         transition: all 700ms ease;
     }
